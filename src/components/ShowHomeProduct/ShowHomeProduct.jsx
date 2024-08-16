@@ -18,7 +18,7 @@ function ShowHomeProduct() {
 
   return (
     <div>
-      <h1 className=" flex justify-center items-center font-black text-2xl  ">Sản phẩm hữu cơ của chúng tôi</h1>
+      <h1 className=" flex justify-center items-center font-semibold text-3xl text-[#45595b]   ">Sản phẩm hữu cơ của chúng tôi</h1>
   
       <div className="flex justify-center gap-8 py-[37px]">
         <button

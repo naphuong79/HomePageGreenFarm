@@ -76,10 +76,10 @@ function HeaderLayout() {
           <div className="h-20">
             <div className="container mx-auto py-[20px] flex justify-between items-center">
               <div>
-              <a href="index.html" class="navbar-brand"><h1 className="text-4xl text-[#87b106] font-black display-6">Fruitables</h1></a>
+              <a href="index.html" class="navbar-brand"><h1 className="text-3xl text-[#87b106] hover:text-[#FFB524] font-black display-6">Fruitables</h1></a>
               </div>
               {/* {Phone} */}
-              <div className=" flex justify-center items-center text-xl font-black text-[#87b106] ">
+              <div className=" flex justify-center items-center text-xl font-black text-[#87b106] hover:text-[#FFB524]">
                 <div className="text-4xl">
                   <FiPhone />
                 </div>
@@ -103,7 +103,7 @@ function HeaderLayout() {
               </div>
               {/* {Cart} */}
               <Link to="/cart">
-                <button className="w-12 h-12 bg-[#7aa93c] rounded-full flex justify-center items-center">
+                <button className="w-12 h-12 bg-[#7aa93c] hover:bg-[#FFB524] rounded-full flex justify-center items-center">
                   <FaCartShopping className="text-white" />
                 </button>
               </Link>

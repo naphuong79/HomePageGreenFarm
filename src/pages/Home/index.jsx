@@ -13,8 +13,8 @@ function Home() {
       <div className="container mx-auto mb-20 space-y-10 px-20">
         <Supprort />
         <div className="flex justify-between">
-          <img src="https://htmldemo.net/pullman/pullman/assets/img/banner/banner_1.2.jpg" alt="" />
-          <img src="https://htmldemo.net/pullman/pullman/assets/img/banner/banner_1.3.jpg" alt="" />
+          {/* <img src="https://htmldemo.net/pullman/pullman/assets/img/banner/banner_1.2.jpg" alt="" />
+          <img src="https://htmldemo.net/pullman/pullman/assets/img/banner/banner_1.3.jpg" alt="" /> */}
         </div>
         <ShowHomeProduct />
         <ImgSale />

@@ -23,15 +23,18 @@ function HomeSlider() {
       >
         <GrLinkNext />
       </button>
+      <div className="rounded-3xl">
       <SwiperSlide>
-        <img src="https://bizweb.dktcdn.net/100/275/458/themes/613299/assets/slide_index_2.jpg?1521086904425" alt="" />
+        <img className="rounded-xl bg-[#FFB524]" src="../../../src/img/hero-img-1.png" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src="https://bizweb.dktcdn.net/100/275/458/themes/613299/assets/slide_index_2.jpg?1521086904425" alt="" />
+      <img src="../../../src/img/hero-img-2.jpg" alt="" />
+
       </SwiperSlide>
-      <SwiperSlide>
+      </div>
+      {/* <SwiperSlide>
         <img src="https://bizweb.dktcdn.net/100/275/458/themes/613299/assets/slide_index_2.jpg?1521086904425" alt="" />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <button
         onClick={() => sliderRef.current.slidePrev()}
         className="absolute top-1/2 -translate-y-1/2 left-[20px] z-20 w-12 h-12 bg-[#dbdbdb] rounded-full flex justify-center items-center hover:bg-[#87b106]"

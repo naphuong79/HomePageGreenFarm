@@ -21,7 +21,7 @@ function ShowHomeProduct2() {
   console.log(resultProducts?.data?.data);
   return (
     <div>
-      <h1 className=" flex justify-center items-center font-black text-2xl my-[10px]">Sản phẩm bán chạy nhất</h1>
+      <h1 className=" flex justify-center items-center font-semibold text-3xl text-[#45595b] my-[10px]">Sản phẩm bán chạy nhất</h1>
    
       <div>
         <Swiper
