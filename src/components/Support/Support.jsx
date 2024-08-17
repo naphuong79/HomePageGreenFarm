@@ -54,7 +54,7 @@ function Support() {
             <Link>Hỗ Trợ Trực Tuyến</Link>
           </div>
           <div className="text-base font-normal text-[#747d88]">
-            <Link>Đường dây hỗ trợ hệ thống cửa hàng Pets Care trực tuyến 24/7</Link>
+            <Link>Đường dây hỗ trợ hệ thống cửa hàng Fruitables trực tuyến 24/7</Link>
           </div>
         </div>
       </div>
