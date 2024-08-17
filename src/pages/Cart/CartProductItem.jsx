@@ -67,7 +67,7 @@ function CartProductItem({ data }) {
               </button>
             </div>
           </td>
-     
+      
 
         <td className="w-[100px] p-8">{useFormatCurrency(data?.sale_price * data?.quantity)}</td>
         <td className="w-[100px] pl-8 text-2xl" onClick={() => dispatch(removeCart(data?._id))}>

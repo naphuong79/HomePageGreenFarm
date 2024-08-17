@@ -7,7 +7,7 @@ import { CiUser } from 'react-icons/ci';
 import { CiCreditCard1 } from 'react-icons/ci';
 import { IoIosLogOut } from 'react-icons/io';
 import { FaSearch } from 'react-icons/fa';
-import { FaCartShopping } from 'react-icons/fa6';
+import { FaBagShopping } from 'react-icons/fa6';
 import { FiPhone } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../../features/Auth/authSlice';
@@ -104,7 +104,7 @@ function HeaderLayout() {
               {/* {Cart} */}
               <Link to="/cart">
                 <button className="w-12 h-12 bg-[#7aa93c] hover:bg-[#FFB524] rounded-full flex justify-center items-center">
-                  <FaCartShopping className="text-white" />
+                  <FaBagShopping className="text-white" />
                 </button>
               </Link>
             </div>
