@@ -21,7 +21,7 @@ function ProductItem({data}) {
   };
 
   return (
-    <div className="w-full border border-[#e5e5e5]">
+    <div className="w-full border border-[#ffb524]">
       <div className="w-full ">
         <Link to={`/product/${data?.slug}`}>
           <img src={data?.imageMain} className="w-full" alt='' />
