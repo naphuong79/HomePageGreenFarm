@@ -46,10 +46,10 @@ function HeaderLayout() {
                 <CiUser />
                 <span>Tài khoản của tôi</span>
               </Link>}
-              {/* <button className="text-white text-base flex justify-center items-center gap-1 hover:text-[#7aa93c]">
+              <button className="text-white text-base flex justify-center items-center gap-1 hover:text-[#7aa93c]">
                 <CiCreditCard1 />
                 <span>Giỏ hàng</span>
-              </button> */}
+              </button>
 
               {auth?.loggedIn ? (
                 <button
