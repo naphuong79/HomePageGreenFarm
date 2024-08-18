@@ -24,7 +24,7 @@ function ProductItem({data}) {
     <div className="w-full border border-[#ffb524]">
       <div className="w-full ">
         <Link to={`/product/${data?.slug}`}>
-          <img src={data?.imageMain} className="w-full" alt='' />
+          <img " src={data?.imageMain} className="w-full" alt='' />
         </Link>
       </div>
       <div className="flex justify-between py-[26px] px-[10px]">
