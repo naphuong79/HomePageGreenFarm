@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+// import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import { MdDashboardCustomize } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
 import { IoBagHandleOutline } from "react-icons/io5";
