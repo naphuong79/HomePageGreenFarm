@@ -22,7 +22,7 @@ function ShowHomeProduct2() {
   return (
     <div>
       <h1 className=" flex justify-center items-center font-semibold text-3xl text-[#45595b] my-[10px]">Sản phẩm bán chạy nhất</h1>
-   
+    
       <div>
         <Swiper
           spaceBetween={10}
