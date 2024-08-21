@@ -34,7 +34,7 @@ function ProductItem({data}) {
           </div>
           <div className="mt-[15px]">
             <del className="mr-[5px] text-[#999999] ">{useFormatCurrency(data?.price)}</del>
-            <span className="text-[#D26B21]">{useFormatCurrency(data?.sale_price)}</span>
+            <span className="text-[#D26B21]">{useFormatCurrency(data?.sale_price)}/KG</span>
           </div>
         </div>
         <div>

@@ -2,7 +2,7 @@ import { Input, Button, Checkbox } from '@material-tailwind/react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../../features/Auth/authSlice';
-import { useLoginMutation } from '../../features/Auth/authApi.service';
+import { useLoginMutation, useLoginGoogleMutation } from '../../features/Auth/authApi.service';
 import * as yup from 'yup';
 import { useFormik } from 'formik';
 import React, { useEffect, useState } from 'react';
@@ -82,6 +82,12 @@ function Login() {
             <Button type="submit" className="bg-[#7aa93c] w-full">
               Đăng nhập
             </Button>
+            <Link 
+              to="/#"
+              class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
+              Quên mật khẩu
+            </Link>
+            <div className="flex "></div>
             <p class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
               Bạn chưa có tài khoản?
               <Link
