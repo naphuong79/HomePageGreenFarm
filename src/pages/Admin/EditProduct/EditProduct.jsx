@@ -11,11 +11,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { successNotify, errorNotify } from '../../../components/Toast';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-// import {
-//   useLazyGetAllBrandsQuery,
-//   useGetAllBrandsQuery,
-//   useDeleteBrandMutation,
-// } from '../../../features/Brand/brandApi.service';
 import { useGetAllCategoriesQuery } from '../../../features/Category/categoryApi.service';
 
 function EditProduct() {
@@ -23,10 +18,6 @@ function EditProduct() {
   const navigate = useNavigate();
   const [updateProduct, resultUpdateProduct] = useUpdateProductMutation();
   const [getOneProduct, resultGetOneProduct] = useLazyGetOneProductQuery();
-  // const getAllBrand = useGetAllBrandsQuery({
-  //   page: 1,
-  //   limit: 10,
-  // });
 
   const getAllCategory = useGetAllCategoriesQuery({
     page: 1,
@@ -45,9 +36,6 @@ function EditProduct() {
       category: '',
       imageCollection: [],
       imageMain: '',
-      // brand: '',
-      // color: [],
-      // size: [],
     },
     validationSchema: yup.object({}),
     onSubmit: (values) => {
@@ -80,10 +68,8 @@ function EditProduct() {
     setFieldValue('stock', resultGetOneProduct?.data?.data?.stock);
     setFieldValue('imageCollection', resultGetOneProduct?.data?.data?.imageCollection);
     setFieldValue('imageMain', resultGetOneProduct?.data?.data?.imageMain);
-    setFieldValue('brand', resultGetOneProduct?.data?.data?.brand?._id);
     setFieldValue('category', resultGetOneProduct?.data?.data?.category?._id);
     setFieldValue('description_summary', resultGetOneProduct?.data?.data?.description_summary);
- 
     setFileList([{
       uid: '-1',
       name: 'imageMain.jpg',
@@ -111,16 +97,16 @@ function EditProduct() {
     headers: {
       authorization: 'authorization-text',
     },
-    // beforeUpload: () => {
-    //   setFileList([{
-    //     uid: '-1',
-    //     name: 'imageMain.jpg',
-    //     status: 'done',
-    //     url: resultGetOneProduct?.data?.data?.imageMain,
-    //     thumbUrl: resultGetOneProduct?.data?.data?.imageMain,
-    //   }]);
-    //   return false;
-    // },
+    beforeUpload: () => {
+      setFileList([{
+        uid: '-1',
+        name: 'imageMain.jpg',
+        status: 'done',
+        url: resultGetOneProduct?.data?.data?.imageMain,
+        thumbUrl: resultGetOneProduct?.data?.data?.imageMain,
+      }]);
+      return false;
+    },
     fileList,
     onChange(info) {
       if (info.file.status !== 'uploading') {
@@ -167,9 +153,9 @@ function EditProduct() {
         <div className="flex gap-[30px]">
           <div className="w-1/2">
             <div className="my-[10px]">
-              <Typography.Title level={5}>Họ và tên</Typography.Title>
+              <Typography.Title level={5}>Tên sản phẩm</Typography.Title>
               <Input
-                placeholder="Họ và tên"
+                placeholder="Tên sản phẩm`"
                 size="lg"
                 name="name"
                 required
@@ -240,7 +226,7 @@ function EditProduct() {
               </Upload>
             </div>
 
-            {/* <div>
+            <div>
               <Upload
                 action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
                 listType="picture"
@@ -262,27 +248,9 @@ function EditProduct() {
                   Bộ sưu tập
                 </Button>
               </Upload>
-            </div> */}
+            </div>
           </div>
           <div className="w-1/2">
-            {/* Brand */}
-            <Typography.Title level={5}>Chọn thương hiệu</Typography.Title>
-            <select
-              name="brand"
-              value={values.brand}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              placeholder="Chọn Brand"
-              className="w-full border border-[#b1bfc6] rounded-[5px] my-[11px] h-[30px]"
-            >
-              <option value="">Lựa chọn thương hiệu</option>
-              {getAllBrand?.data?.data?.map((brand, index) => (
-                <option key={brand?._id} value={brand?._id}>
-                  {brand?.name}
-                </option>
-              ))}
-            </select>
-
             {/* Danh mục */}
             <Typography.Title level={5}>Chọn danh mục</Typography.Title>
             <select
