@@ -34,7 +34,7 @@ function Cart() {
 
       <div className="flex justify-end ">
         <div className="bg-[#f8f8f8] w-2/5 border boeder-gray-300 my-4 p-2 ">
-          <div className=" text-2xl font-bold text-center ">Giỏ hàng</div>
+          <div className=" text-2xl font-bold justify-center items-center ">Giỏ hàng</div>
           <div>
             <tr className="text-xl">
               <td className="w-4/5">Tổng tiền:</td>

@@ -21,10 +21,10 @@ function ProductItem({data}) {
   };
 
   return (
-    <div className="w-full border border-[#ffb524]">
+    <div className="w-full border border-[#ffb524] rounded-3xl hover:shadow-2xl bg-[#f4f6f8]">
       <div className="w-full ">
         <Link to={`/product/${data?.slug}`}>
-          <img src={data?.imageMain} className="w-full" alt='' />
+          <img src={data?.imageMain} className="w-full h-60 rounded-t-3xl"  alt='' />
         </Link>
       </div>
       <div className="flex justify-between py-[26px] px-[10px]">

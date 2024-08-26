@@ -6,6 +6,8 @@ import { useLoginMutation, useLoginGoogleMutation } from '../../features/Auth/au
 import * as yup from 'yup';
 import { useFormik } from 'formik';
 import React, { useEffect, useState } from 'react';
+import { FaGoogle } from "react-icons/fa";
+
 
 function Login() {
   const [login, resultLogin] = useLoginMutation();
@@ -87,7 +89,16 @@ function Login() {
               class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
               Quên mật khẩu
             </Link>
-            <div className="flex "></div>
+            <div className="flex justify-center mt-3 font-sans text-sm antialiased
+            font-light leading-normal text-inherit ">Hoặc
+            </div>
+            <Link 
+              to="/#"
+              className="flex justify-center mt-3 p-2 rounded-lg font-sans text-sm antialiased
+              border border-[#000000] font-light leading-normal text-inherit ">
+              <div className="flex justify-center items-center pr-4"><FaGoogle/></div>
+              <div className="flex justify-center items-center">Đăng nhập bằng Google</div>
+            </Link>
             <p class="flex justify-center mt-6 font-sans text-sm antialiased font-light leading-normal text-inherit">
               Bạn chưa có tài khoản?
               <Link

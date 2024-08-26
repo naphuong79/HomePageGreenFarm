@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { GrLinkNext } from 'react-icons/gr';
 import { GrLinkPrevious } from 'react-icons/gr';
+import './HomeSlider.css'
 
 // Import Swiper styles
 import 'swiper/css/bundle';
@@ -24,11 +25,15 @@ function HomeSlider() {
         <GrLinkNext />
       </button>
       <div className="rounded-3xl bg-gradient-to-r from-black bg-[url('../../../src/img/hero-img.jpg')]">
+      {/* <div style={{backgroundImage: `url("../../../src/img/hero-img-2.jpg")`,
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"}}> */}
       <SwiperSlide>
-        <img className="float-right rounded-xl w-[450px] m-[150px] bg-[#FFB524]" src="../../../src/img/hero-img-1.png" alt="" />
+        <img className="float-right rounded-xl w-[450px] m-[50px] bg-[#FFB524]" src="../../../src/img/hero-img-1.png" alt="" />
       </SwiperSlide>
       <SwiperSlide>
-      <img className="float-right rounded-xl w-[450px] m-[150px]" src="../../../src/img/hero-img-2.jpg" alt="" />
+      <img className="float-right rounded-xl w-[450px] m-[50px]" src="../../../src/img/hero-img-2.jpg" alt="" />
 
       </SwiperSlide>
       </div>
