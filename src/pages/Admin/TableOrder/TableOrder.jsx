@@ -166,7 +166,7 @@ function TableOrder() {
                   class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-3 rounded-md border-blue-gray-200 focus:border-gray-900"
                 >
                   <option value="">Tất cả trạng thái</option>
-                  <option value="paid">Đã thanh toán</option>
+                  <option value="paid">Đã giao hàng</option>
                   <option value="pending">Đang chờ xử lý</option>
                   <option value="cancelled">Đã hủy</option>
                 </select>
@@ -247,7 +247,7 @@ function TableOrder() {
                             variant="ghost"
                             // value={oder?.status === 'paid' ?  'paid' : oder?.status === 'cancelled' ?  'cancelled': 'pending'}
                             // color={oder?.status === 'paid' ? 'green' : oder?.status === 'pending' ? 'amber' : 'red'}
-                            value={oder.status === 'paid' ? 'Đã thanh toán' : oder.status === 'pending'? 'Đang chờ xử lý': 'Đã hủy'}
+                            value={oder.status === 'paid' ? 'Đã giao hàng' : oder.status === 'pending'? 'Đang chờ xử lý': 'Đã hủy'}
                             color={oder.status === 'paid' ? 'green' : oder.status === 'pending' ? 'amber' : 'red'}
                           />
                         </div>
